@@ -1,0 +1,95 @@
+:root {
+    --color-light-60: #FBFBFB;
+
+    --color-dark-50: #A5A5A5;
+    --color-dark-400: #333333;
+    --color-dark-500: #222222;
+    --color-dark-900: #000000;
+
+    --color-orange-200: #FF9F0C;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-dark-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.container {
+    height: 90vh;
+    width: 50vh;
+    background-color: var(--color-dark-900);
+    border: 6px solid var(--color-dark-900);
+    border-radius: 6px;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20%;
+}
+
+.result span {
+    color: var(--color-light-60);
+    font-size: 80px;
+    margin-right: 20px;
+    justify-self: flex-end;
+}
+
+.buttons {
+    width: 100%;
+    height: 80%;
+    background-color: var(--color-dark-900);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+} 
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    color: var(--color-light-60);
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item1 {
+    background-color: var(--color-dark-50);
+    color: var(--color-dark-900);
+}
+
+.item3 {
+    background-color: var(--color-orange-200);
+    padding-bottom: 3px;
+}
+
+.numbers, .comma {
+    background-color: var(--color-dark-400);
+}
+
+.itemZero {
+    width: 90%;
+    border-radius: 135px;
+    grid-column: span 2;
+}
